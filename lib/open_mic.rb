@@ -1,10 +1,13 @@
 class OpenMic
   def initialize(event)
-    @event = {
-      location: event[:location],
-      date: event[:date],
-      performers: [],
-    }
+    @location = event[:location]
+    @date = event[:date]
+    @performers = []
+    # @event = {
+    #   location: event[:location],
+    #   date: event[:date],
+    #   performers: [],
+    # }
   end
 
   def location
